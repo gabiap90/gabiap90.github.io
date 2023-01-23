@@ -1,4 +1,4 @@
-:root{
+:root {
     --custom-orange: #f05a28;
     --custom-gray: rgb(102, 102, 102);
 }
@@ -14,6 +14,35 @@ a {
     color: inherit;
 }
 
+.title-2th {
+    color: var(--custom-orange);
+}
+
+.title-2th,
+.title-3th {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.title-2th span,
+.title-3th div {
+    margin: 0 10px;
+    display: flex;
+}
+
+.title-3th>div>span,
+.title-3th>div>a {
+    margin: 0 2px;
+}
+
+.title-3th {
+    margin-bottom: 50px;
+}
+
 a:hover {
     color: inherit;
 }
@@ -22,38 +51,38 @@ header {
     text-align: center;
 }
 
-header ul{
+header ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
 }
 
-header ul.title-2th{
+header ul.title-2th {
     color: var(--custom-orange);
     list-style-type: initial;
 }
 
-header ul.title-2th li{
+header ul.title-2th li {
     margin: 0 20px;
 }
 
-header ul.title-2th li:first-child{
+header ul.title-2th li:first-child {
     margin: 0 20px;
     list-style-type: none;
 }
 
-header ul.title-3th .uk-icon{
+header ul.title-3th .uk-icon {
     margin-right: 5px;
 }
 
-header ul.title-3th li{
+header ul.title-3th li {
     margin: 0 5px;
     text-decoration: none;
     padding-right: 10px;
     border-right: solid 2px rgb(102, 102, 102);
 }
 
-header ul.title-3th li:last-child{
+header ul.title-3th li:last-child {
     border-right: none;
 }
 
@@ -64,7 +93,11 @@ header ul.title-3th li:last-child{
 
 .company {
     color: var(--custom-orange);
-    padding-left: 50px;
+    padding-left: 25px;
+}
+
+.company span {
+    margin: 0 10px;
 }
 
 .skills-main-container {
@@ -78,7 +111,19 @@ header ul.title-3th li:last-child{
     margin: 0 50px;
 }
 
-.skills-container .soft-skill{
+.skills-container .soft-skill {
     background-color: var(--custom-orange);
     margin: 2px;
+}
+
+section {
+    margin: 50px 0;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+h3.uk-card-title {
+    margin-bottom: 10px;
 }
